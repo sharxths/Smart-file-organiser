@@ -38,20 +38,3 @@ for file in files:
         file_extensions.append("."+file.split(".")[-1])
 print(file_extensions)
 print("Number of extensions: " ,len(file_extensions))
-
-#file classification
-print("-"*20 + " FILE CLASSIFICATION " + "-"*20)
-classified_files = {
-    "PDFs": [],
-    "Images": [],
-    "Videos": [],
-    "Documents": [],
-    "Spreadsheets": [],
-    "Other": []
-}
-for file in files:
-    if "." in file:
-        extension = "."+file.split(".")[-1]
-    else: 
-        extension = "none"
-    print(file, "->", extension)
